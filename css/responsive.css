@@ -1,0 +1,520 @@
+@media screen and (max-width: 1210px) {
+    .main-menu-div {
+        width: 46%;
+    }
+    .drinks, .dessert, .main-dish {
+        width: 90%;
+    }
+    .pizza-background {
+        width: 40%;
+    }
+    .menu-part {
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width: 1160px) {
+    header {
+        width: 90%;
+    }
+    header nav {
+        width: 60%;
+    }
+    .slogan {
+        font-size: 2.2rem;
+        line-height: 2.3rem;
+    }
+    /* menu page ===============================*/
+    .box .recipe {
+        /* edited down*/ 
+        font-size: 0.8rem; 
+        line-height: 1rem;
+        padding: 10px;
+        /* edited up*/ 
+    }
+    .pizza_name {
+        font-size: 1.3rem;
+    }
+    #full_menu {
+        padding: 1rem 2rem;
+    }
+    /* contact page ===============================*/
+    main {
+        padding: 0 2vw 0 6.5vw;
+    }
+    .form_container {
+        width: 23%;
+    }
+}
+/* menu box edited starts here */
+@media screen and (max-width: 1040px){
+    .image {
+        height: 16vw;
+    }
+}
+/* menu box edited ends here */
+@media screen and (max-width: 940px) {
+    .pattern-decor {
+        position: absolute;
+        width: 40%;
+        height: 60%;
+        top: 50%;
+        right: 25%;
+        transform: translateY(-45%);
+        position: fixed;
+    }
+    .main-ul {
+        font-size: 1.2rem;
+    }
+    .slogan {
+        font-size: 1.9rem;
+        line-height: 2.3rem;
+    }
+    .contact-div {
+        margin-top: 5rem;
+    }
+    .order-and-location {
+        padding: 0.8rem;
+    }
+    .order {
+        right: 1rem;
+    }
+    .location {
+        padding-right: 2rem;
+    }
+    .slider {
+        width: 43vw;
+        top: 53%;
+        left: 53%;
+    }
+    .swiper-slide img {
+        width: 40vw;
+    }
+    /* menu page ===============================*/
+    .pizza_name {
+        font-size: 1.2rem;
+        margin-top: 15px;
+    }
+    .price {
+        font-size: 1rem;
+    }
+    .image {
+        height: 16vw;
+    }
+    /* contact page ===============================*/
+    .text_us {
+        color: #fcfcf6;
+        margin-bottom: 30px;
+        letter-spacing: 2px;
+        font-size: 1.3rem;
+    }
+    .form input {
+        font-size: 0.8rem;
+    }
+    .form textarea::placeholder {
+        font-size: 0.8rem;
+    }
+    .form .submit {
+        width: 7rem;
+        padding: 7px 0;
+    }
+}
+@media screen and (max-width: 850px) {
+    header nav {
+        width: 72%;
+    }
+    .cosimo {
+        font-size: 4rem;
+    }
+    .slogan {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    .order-and-location {
+        font-size: 0.9rem;
+    }
+    .slider {
+        top: 55%;
+    }
+    .swiper-slide {
+        width: 50vw;
+        height: 45vw;
+    }
+    /* menu page ==================================*/
+    .pizza_containers {
+        width: 70%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    .box {
+        width: 25vw;
+        margin-top: 4rem;
+    }
+    .image {
+        height: 18vw;
+    }
+    .show_menu-menu-page {
+        width: 85%;
+        margin-bottom: 1.5rem;
+    }
+    /* contact page */
+    .contact-and-map {
+        width: 90%;
+    }
+    .gmap_canvas {
+        height: 10rem;
+    }
+    .form_container {
+        display: none;
+    }
+}
+@media screen and (max-width: 770px) {
+    .main-ul {
+        font-size: 1.1rem;
+    }
+    .language-ul {
+        height: calc(0.8rem + 21px);
+        font-size: 0.8rem;
+    }
+    main .texts {
+        margin-top: 5vw;
+    }
+    .slogan {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+    .slider {
+        top: 44%;
+    }
+    /* contact page  */
+    .title {
+        font-size: 1.2rem;
+    }
+    .innercont div {
+        font-size: 0.9rem;
+    }
+    .gmap_canvas {
+        height: 8rem;
+    }
+
+    /* menu pop-up */
+    .main-menu-div {
+        margin-right: -3rem;
+    }
+    .main-menu-div span {
+        font-size: 0.9rem;
+       
+    }
+}    
+@media screen and (max-width: 750px) {
+    .pizza-background {
+        display: none;
+    }
+    .main-menu-div {
+        width: 80%;
+    }
+} 
+@media screen and (max-width: 640px) {
+    header nav {
+        width: 77%;
+    }
+    .slogan {
+        font-size: 1.4rem;
+    }
+    .order-and-location {
+        font-size: 0.8rem;
+    }
+    .swiper-pagination-bullets .swiper-pagination-bullet {
+        width: 1.2rem;
+    }
+    /* menu page ===============================*/
+    .pizza_containers {
+        width: 80%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    .box {
+        width: 28vw;
+        margin-top: 3rem;
+    }
+    /* edited down */
+    .image {
+        height: 20vw;
+    }
+    /* edited up */
+    .show_menu-menu-page {
+        width: 89%;
+    }
+    #full_menu {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 595px) {
+    .order{
+        background-color: #e2ece3;
+    }
+    h1 img {
+        width: 5.5rem;
+    }
+    /* menu page ===============================*/
+    .pizza_containers {
+        width: 80%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .box {
+        width: 60%;
+        margin-top: 2rem;
+    }
+    .image {
+        height: 32vw;
+    }
+    .show_menu-menu-page {
+        width: 73.5%;
+        justify-content: flex-end;
+    }
+    .show_menu .social-icons-menu-page {
+        width: 2rem;
+        flex-wrap: wrap;
+        position: fixed;
+        top: 25%;
+        left: 9%;
+    }
+    .show_menu .social-icons-menu-page svg {
+        width: 2.5rem;
+        margin-top: 0.8rem;
+        fill: #7da981;
+    }
+}
+@media screen and (max-width: 540px) {
+    body {
+        overflow-x: hidden;
+    }
+    /* mobile menu ============================ */
+    .main-ul {
+        display: none;
+    }
+    .buttons {
+        position: relative;
+        width: 47.2vw;
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+        fill: #166d43;
+    }
+    .menu_buttons {
+        display: block;
+        width: 2rem;
+        height: 2rem;
+    }
+    .menu_buttons .path-hover1 {
+        animation-name: menuMove1;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+    .menu_buttons .path-hover2 {
+        animation-name: menuMove2;
+        animation-duration: 0.7s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+    .menu_buttons .path-hover3 {
+        animation-name: menuMove3;
+        animation-duration: 0.4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+    @keyframes menuMove1 {
+        0% {transform: translate(30%);}
+        100% {transform: translate(0);}
+    }
+    @keyframes menuMove2 {
+        0% {transform: translate(15%);}
+        100% {transform: translate(0);}
+    }
+    @keyframes menuMove3 {
+        0% {transform: translate(20%);}
+        100% {transform: translate(0);}
+    }
+    /* index ==================================*/
+    header {
+        width: 90%;
+    }
+    header nav {
+        margin-top: 2rem;
+    }
+    main .texts {
+        margin-top: 1vw;
+    }
+    .cosimo {
+        font-size: 3.5rem;
+    }
+    .slogan {
+        width: 71vw;
+        font-size: 1.3rem;
+    }
+    .slider {
+        left: 50%;
+        transform: translate(-50%);
+        top: 35%;
+    }
+    .contact-div {
+        width: 60%;      
+        margin: 0 auto;
+        /* contac_tedited */
+        margin-top: 20rem;
+        flex-direction: column;
+    }
+    .contact-div svg {
+        width: 1.4rem;
+        margin-right: 5px;
+    }
+    .location {
+        justify-content: center;
+        padding-bottom: 1.3rem;
+        
+    }
+    .order {
+        justify-content: center;
+        background-color: #fdcb1a;
+        bottom: 0.7rem;
+        right: 0;
+    }
+    /* index changed ends here */
+    .social-icons {
+        margin-top: 5rem;
+    }
+    .slider {
+        width: 50vw;
+    }
+    .swiper-slide {
+        height: 50vw;
+    }
+    .swiper-slide img {
+        width: 50vw;
+    }
+    .swiper-pagination-bullets .swiper-pagination-bullet-active {
+        background: #f5c000;
+    }
+    .swiper-pagination-horizontal.swiper-pagination-bullets {
+        justify-content: center;
+    }
+    /* contact page ======================================*/
+    .innercont {
+        margin-top: 3rem;
+    }
+    .gmap_canvas {
+        width: 105%;
+    }
+
+     /* menu pop-up */
+    .close-menu-page {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+}
+@media screen and (max-width: 490px) {
+    .contact-div {
+        width: 63%;      
+    }
+    .order-and-location {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 455px) {
+    header {
+        width: 82%;
+    }
+    .buttons {
+        margin-right: 2rem;
+    }
+    .contact-div {
+        width: 65%; 
+        /* contac_tedited */     
+        margin-top: 20rem;
+    }
+    .slider {
+        width: 60vw;
+    }
+    .swiper-slide {
+        height: 62vw;
+    }
+    .swiper-slide img {
+        width: 60vw;
+    }
+    /* menu page ===============================*/
+    .box {
+        width: 80%;
+        margin-top: 2rem;
+    }
+    .image {
+        height: 40vw;
+    }
+    .show_menu-menu-page {
+        width: 82%;
+        justify-content: flex-end;
+    }
+    /* full menu page ======================== */
+    .close-menu-page {
+        right: 2rem;
+    }
+}
+@media screen and (max-width: 440px) {
+    .contact-div {
+        width: 80%;
+    }
+    .order-and-location {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    /* index page ===================================*/
+    .language-ul {
+        height: calc(0.8rem + 15px);
+    }
+    .language-ul a {
+        padding: 7px;
+    }
+    .contact-div {
+        width: 98%;
+    }
+    .cosimo {
+        font-size: 2.9rem;
+    }
+    .slogan {
+        font-size: 1.3rem;
+    }
+    .main-ul-mobile li a {
+        font-size: 1.3rem;
+    }
+    .contact-div {
+        /* contac_tedited */
+        margin-top: 18rem;
+    }
+    .order-and-location {
+        font-size: 0.9rem;
+    }
+    .slider {
+        top: 35%;
+    }
+    /* contact page ======================================*/
+    .innercont div {
+        font-size: 0.8rem;
+    }
+    /* menu pop-up */
+    .main-menu-div span {
+        font-size: 0.8rem;
+    }
+    .menuh2 {
+        font-size: 1.7rem;
+    }
+    .menu-part h3 {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 350px) {
+    .main-menu-div span {
+        font-size: 0.75rem;
+    }
+}

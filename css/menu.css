@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+body {
+  background-color: #fdf4ef;
+}
+/* classes in advance */
+.flex-justify {
+  display: flex;
+  justify-content: space-between;
+}
+/* decor */
+.right-decoration-div {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 75%;
+  bottom: 0;
+  background-color: #f86d43;
+}
+.pattern-decor {
+  position: absolute;
+  width: 23.5vw;
+  height: 35vw;
+  top: 50%;
+  right: 23%;
+  transform: translateY(-45%);
+}
+.pattern-decor img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+/* containers */
+.main-container {
+  width: 100vw;
+  font-family: 'BPG Nino Mtavruli';
+  font-weight: 900;
+  position: relative;
+}
+.container-center {
+  margin: 0 auto;
+  width: 87vw;
+}
+/* header */
+h1 img{
+  width: 11vw;
+  height: auto;
+  margin-top: 2.5vw;
+}
+header nav {
+  width: 46vw;
+  margin-top: 4vw;
+}
+header nav ul li {
+  position: relative;
+}
+header nav ul a {
+  display: inline-block;
+  color: #323232;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 7px;
+  transition: 0.3s;
+}
+.main-ul {
+  width: 23vw;
+  height: calc(1.3rem + 21px);
+  font-size: 1.3rem;
+}
+.main-ul .active::after, .mobile-active::after { 
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  display: block;
+  height: 4px;
+  width: 40%;
+  background: #ec4411;
+  border-radius: 7px;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.main-ul li::after { 
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  height: 4px;
+  width: 0;
+  background: #ec4411;
+  border-radius: 7px;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.main-ul li:hover::after { 
+  width: 40%; 
+  left: 30%; 
+}
+.main-ul li:hover ,.active, .mobile-active {
+  color: #ed5021;
+}
+.language-ul {
+  width: 5vw;
+  height: calc(1.1rem + 21px);
+  font-size: 1.1rem;
+}
+.language-ul a {
+  text-transform: uppercase;
+}
+.language-ul li:hover, .actv {
+  background-color: #ffffff;
+  border-radius: 7px;
+}
+/* social  network icons */
+.show_menu {
+  width: 73.5%;
+  margin-top: 5.9rem;
+  align-items: flex-end;
+}
+.social-icons {
+  width: 7rem;
+}
+.social-icons svg {
+  width: 1.8rem;
+  fill: #7da981;
+  transition: 0.3s;
+}
+.social-icons svg:hover {
+  fill: #ead94f;
+}
+#full_menu {
+  cursor: pointer;
+  border-radius: 12px;
+  color: #323232;
+  padding: 1.1rem 2.5rem;
+  background-color: #fdcc1a;
+}
+#full_menu:hover {
+  color: #ffffff;
+  background-color: #fad13d;
+}
+/* pizza container */
+.pizza_containers {
+  margin-top: 2vw;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 17.5vw;
+  background-color: #fce6e6;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.image {
+  width: 101%;
+  height: 14vw;
+  position: relative;
+  border-radius: 15px 15px 0 0 ;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 0 0 ;
+  object-fit: cover;
+}
+.pizza_name {
+  font-size: 1.4rem;
+  margin-top: 20px;
+  color: #eb4312;
+}
+.box span {
+  font-weight: normal;
+  padding: 0 15px 10px;
+}
+.price {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #645e5e;
+}
+.box .recipe {
+  display: none;
+  font-size: 1rem;
+  color: #ffffff;
+  padding: 20px;
+  line-height: 1.3rem;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+.hover {
+  border-radius: 15px 15px 0px 0px;
+  transition: 0.3s;
+}
+.image:hover .hover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(8, 8, 8, 0.5);
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px 15px 0px 0px;
+}
+.image:hover .recipe {
+  display: block;
+}
+/* complete menu page */
+.full-menu-container {
+  display: none;
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;  
+  background-color: #fcf2e6;
+  top: 0;
+  font-family: 'BPG Nino Mtavruli';
+}
+.pizza-background {
+  position: fixed;
+  width: 30%;
+  color: #ffffff;
+  height: 100vh;
+  background-image: url(../images/pizza-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.div-for-padding {
+  padding-top: 10vw;
+}
+.on-image-texts {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.on-image-texts>h3 {
+  font-size: 1.8rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+.on-image-texts>h4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  padding-bottom: 2rem;
+}
+.div-for-padding>h2 {
+  background-color: rgba(255, 204, 25, .8);
+  font-size: 1.8rem;
+  letter-spacing: 1.5px;
+  padding: 2rem  0;
+  text-align: center;
+}
+.main-menu-div {
+  width: 60%;
+  position: absolute;
+  right: 5.5rem;
+}
+.main-menu-div span {
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+.menu-part {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8rem;
+}
+.menu-part h3 {
+  color: #166d43;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+}
+.menuh2 {
+  color: #d80e0e;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+.drink-dessert ul li, .main-dish ul li {
+  margin-top: 20px;
+}
+.drinks, .dessert, .main-dish {
+  width: 28vw;
+  margin-top: 50px;
+}
+.menu-part ul {
+  line-height: 1rem;
+}
+.menu-part li {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 1px dashed black ;
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+.names {
+  display: flex;
+  flex-direction: column;
+}
+.prices {
+  color: #d80e0e;
+  font-weight: bold;
+  width: 6rem;
+  text-align: right;
+}
+.close-menu-page {
+  position: fixed;
+  right: 2.2rem;
+  top: 1.5rem;
+  width: 2.3rem;
+  height: 2.3rem;
+  cursor: pointer;
+  fill: #166d43;
+  transition: 0.3s;
+}
+.close-menu-page:hover {
+  fill: #f86d43;
+}
+/*mobile responsive menu ================================ */
+.buttons {
+  display: none;
+}
+.scroll-decoration {
+  height: 0;
+  position: fixed;
+  transition: 0.7s;
+  background-color: #e9b600;
+}
+.mobile-navigation {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 0;
+  overflow: hidden;
+  background-color: #fcfcf6;
+  transition: 0.7s;
+}
+.nav_mobile {
+  width: 100%;
+  margin-top: 8rem;
+  font-family: 'BPG Nino Mtavruli';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  height: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+.main-ul-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s;
+}
+.main-ul-mobile li {
+  margin-top: 3rem;
+}
+.main-ul-mobile li a {
+  font-size: 1.7rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: #323232;
+}
+#close_menu {
+  position: absolute;
+  top: 1.5rem;
+  right: 26%;
+  display: none;
+  fill: #166d43;
+}
+/*mobile responsive menu ================================ */
+.buttons {
+  display: none;
+}
+.scroll-decoration {
+  height: 0;
+  position: fixed;
+  transition: 0.7s;
+  background-color: #fa6132;
+}
+.mobile-navigation {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 0;
+  overflow: hidden;
+  background-color: #fcfcf6;
+  transition: 0.7s;
+}
+.nav_mobile {
+  width: 100%;
+  margin-top: 8rem;
+  font-family: 'BPG Nino Mtavruli';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  height: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+.main-ul-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s;
+}
+.main-ul-mobile li {
+  margin-top: 3rem;
+}
+.main-ul-mobile li a {
+  font-size: 1.7rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: #323232;
+}
+#close_menu {
+  position: absolute;
+  top: 1.5rem;
+  right: 26%;
+  display: none;
+  fill: #166d43;
+}
+/* MOBILE MENU ACTIVE */
+.main-ul-mobile li {
+  padding-bottom: 7px;
+  position: relative;
+}
+.main-ul-mobile .mobile-active {
+  color: #ed5021;
+}

@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+body {
+  background-color: #fdf4ef;
+}
+/* classes in advance */
+.flex-justify {
+  display: flex;
+  justify-content: space-between;
+}
+.order-and-location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 1.08rem;
+  border-radius: 10px;
+}
+/* containers */
+.main-container {
+  width: 100vw;
+  font-family: 'BPG Nino Mtavruli';
+  font-weight: 900;
+  position: relative;
+}
+.container-center {
+  margin: 0 auto;
+  width: 87vw;
+}
+/* decor */
+.right-decoration-div {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 75%;
+  bottom: 0;
+  background-color: #ffcc19;
+}
+.pattern-decor {
+  position: absolute;
+  width: 23.5vw;
+  height: 35vw;
+  top: 50%;
+  right: 25%;
+  transform: translateY(-45%);
+}
+.pattern-decor img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* header */
+h1 img {
+  width: 11vw;
+  height: auto;
+  margin-top: 2.5vw;
+}
+header nav {
+  width: 46vw;
+  margin-top: 4vw;
+}
+header nav ul li {
+  position: relative;
+}
+header nav ul a {
+  display: inline-block;
+  color: #323232;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 7px;
+  transition: 0.3s;
+}
+.main-ul {
+  width: 23vw;
+  height: calc(1.3rem + 21px);
+  font-size: 1.3rem;
+}
+.main-ul .active::after, .mobile-active::after { 
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  display: block;
+  height: 4px;
+  width: 40%;
+  background: #ec4411;
+  border-radius: 7px;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.main-ul li::after { 
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  height: 4px;
+  width: 0;
+  background: #ec4411;
+  border-radius: 7px;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.main-ul li:hover::after { 
+  width: 40%; 
+  left: 30%; 
+}
+.main-ul li:hover ,.active, .mobile-active {
+  color: #ed5021;
+}
+.language-ul {
+  width: 5vw;
+  height: calc(1.1rem + 21px);
+  font-size: 1.1rem;
+}
+.language-ul a {
+  text-transform: uppercase;
+}
+.language-ul li:hover, .actv {
+  background-color: #ffffff;
+  border-radius: 7px;
+}
+/* text cosimo */
+.cosimo {
+  font-family: 'Futura Md BT';
+  font-size: 5rem;
+  color: #ffefe6;
+  text-transform: uppercase;
+}
+/* slogan */
+.slogan {
+  color: #166d43;
+  width: 52vw;
+  font-size: 2.5rem;
+  line-height: 2.7rem;
+}
+/* location and phone number badges */
+main .texts {
+  margin-top: 1.5vw;
+}
+.contact-div {
+  display: flex;
+  margin: 3vw 0 9vw;
+}
+.contact-div svg {
+  width: 1.4rem;
+  margin-right: 12px;
+}
+.location {
+  color: #ec4411;
+  background-color: #ffffff;
+  padding-right: 2.5vw;
+  position: relative;
+  transition: 0.3s;
+}
+.location:hover {
+  color: #ffffff;
+  background-color: #f86d43;
+}
+.location-link {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.location svg {
+  fill: #ec4411;
+  transition: 0.3s;
+}
+.location:hover.location svg {
+  fill: #ffffff;
+}
+.order{
+  color: #565656;
+  background-color: #fdcb1a;
+  position: relative;
+  right: 1.2vw;
+}
+.order svg {
+  fill: #565656;
+}
+/* social  network icons */
+.social-icons {
+  width: 7rem;
+}
+.social-icons svg {
+  width: 1.8rem;
+  fill: #7da981;
+  transition: 0.3s;
+}
+.social-icons svg:hover {
+  fill: #ead94f;
+}
+/* slider container and swiper styles  */
+
+/* changed starts*/
+.slider {
+  width: 70vh;
+  position: absolute;
+  top: 57%;
+  transform: translateY(-50%);
+  left: 57%;
+}
+.swiper-slide {
+  display: flex;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  width: 70vh;
+}
+/* changed ends*/
+
+.swiper-pagination-horizontal.swiper-pagination-bullets {
+  display: flex;
+  justify-content: flex-end;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 1.4rem;
+  height: 0.4rem;
+  border-radius: 7px;
+  margin-right: 0.5rem;
+  background: #019900;
+  opacity: 1;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet-active {
+  background: #ffffff;
+  outline: none;
+}
+/*mobile responsive menu ================================ */
+.buttons {
+  display: none;
+}
+.scroll-decoration {
+  height: 0;
+  position: fixed;
+  transition: 0.7s;
+  background-color: #ffc800;
+}
+.mobile-navigation {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 0;
+  overflow: hidden;
+  background-color: #fcfcf6;
+  transition: 0.7s;
+}
+.nav_mobile {
+  width: 100%;
+  margin-top: 8rem;
+  font-family: 'BPG Nino Mtavruli';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  height: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+.main-ul-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s;
+}
+.main-ul-mobile li {
+  margin-top: 3rem;
+}
+.main-ul-mobile li a {
+  font-size: 1.7rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: #323232;
+}
+#close_menu {
+  position: fixed;
+  top: 1.5rem;
+  right: 26%;
+  display: none;
+  fill: #166d43;
+}
+/* MOBILE MENU ACTIVE */
+.main-ul-mobile a {
+  padding-bottom: 7px;
+}
+.main-ul-mobile li {
+  padding-bottom: 7px;
+  position: relative;
+}
+.main-ul-mobile .mobile-active {
+  color: #ed5021;
+}
