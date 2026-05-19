@@ -31,26 +31,31 @@
   }
 
   function renderMenu() {
-    var cardsContainer = document.querySelector('.pizza_containers');
-    if (cardsContainer && typeof pizzaCards !== 'undefined') {
-      cardsContainer.innerHTML = pizzaCards.map(renderPizzaCard).join('');
+    var menuView = document.getElementById('view-menu');
+    var fullMenu = document.getElementById('full-menu-container');
+
+    if (menuView && typeof pizzaCards !== 'undefined') {
+      var cardsContainer = menuView.querySelector('.pizza_containers');
+      if (cardsContainer) {
+        cardsContainer.innerHTML = pizzaCards.map(renderPizzaCard).join('');
+      }
     }
 
-    if (typeof menuList === 'undefined') {
+    if (typeof menuList === 'undefined' || !fullMenu) {
       return;
     }
 
-    var beveragesList = document.querySelector('.drinks ul');
+    var beveragesList = fullMenu.querySelector('.drinks ul');
     if (beveragesList) {
       beveragesList.innerHTML = renderMenuListItems(menuList.beverages);
     }
 
-    var dessertsList = document.querySelector('.dessert ul');
+    var dessertsList = fullMenu.querySelector('.dessert ul');
     if (dessertsList) {
       dessertsList.innerHTML = renderMenuListItems(menuList.desserts);
     }
 
-    var mainDishesList = document.querySelector('.main-dish ul');
+    var mainDishesList = fullMenu.querySelector('.main-dish ul');
     if (mainDishesList) {
       mainDishesList.innerHTML = renderMenuListItems(menuList.mainDishes);
     }
@@ -64,9 +69,5 @@
     }
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initMenuPage);
-  } else {
-    initMenuPage();
-  }
+  window.initMenuPage = initMenuPage;
 })();

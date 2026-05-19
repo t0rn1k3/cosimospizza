@@ -1,0 +1,25 @@
+.page-view {
+  display: none;
+}
+
+.page-view.is-active {
+  display: block;
+}
+
+body[data-route="contact"] .right-decoration-div {
+  background-color: #77ab7b;
+}
+
+body[data-route="home"] .right-decoration-div,
+body[data-route="menu"] .right-decoration-div {
+  background-color: #f86d43;
+}
+
+#view-contact main {
+  width: 100%;
+}
+
+#view-contact .contact-map-form {
+  margin: 0 auto;
+  width: 87vw;
+}

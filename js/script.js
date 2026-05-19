@@ -2,46 +2,58 @@
 const openMenuBtn = document.getElementById('open_menu');
 const closeMenuBtn = document.getElementById('close_menu');
 const ShowMenu = document.getElementById('mobile-navigation');
-const scrollMenu = document.getElementById('nav_mobile'); 
-const mobIcons = document.getElementById('mobile-icon');
+const scrollMenu = document.getElementById('nav_mobile');
 const mobDecoration = document.getElementById('scroll-decoration');
 
-
-
-// menu pop up button ===================
+// menu pop up button
 const menuButton = document.getElementById('full_menu');
 const menuPopUp = document.getElementById('full-menu-container');
-const closePopUp =document.getElementById('close-menu-page');
+const closePopUp = document.getElementById('close-menu-page');
 
-
-// menu buttons ==============================]
 function openMenu() {
+  if (!openMenuBtn || !closeMenuBtn || !ShowMenu) {
+    return;
+  }
+
   openMenuBtn.style.display = 'none';
   closeMenuBtn.style.display = 'block';
   ShowMenu.style.height = '100vh';
   ShowMenu.style.overflow = 'visible';
-  mobDecoration.style.height = '100vh';
-  scrollMenu.style.height = 'auto';
-  scrollMenu.style.overflow = 'visible';
-};
-  
+
+  if (mobDecoration) {
+    mobDecoration.style.height = '100vh';
+  }
+
+  if (scrollMenu) {
+    scrollMenu.style.height = 'auto';
+    scrollMenu.style.overflow = 'visible';
+  }
+}
 
 function closeMenu() {
+  if (!openMenuBtn || !closeMenuBtn || !ShowMenu) {
+    return;
+  }
+
   closeMenuBtn.style.display = 'none';
   openMenuBtn.style.display = 'block';
   ShowMenu.style.height = '0';
   ShowMenu.style.overflow = 'hidden';
-  mobDecoration.style.height = '0';
+
+  if (mobDecoration) {
+    mobDecoration.style.height = '0';
+  }
 }
 
+window.closeMobileNav = closeMenu;
 
-openMenuBtn.addEventListener('click', () => {
-  openMenu();
-});
+if (openMenuBtn) {
+  openMenuBtn.addEventListener('click', openMenu);
+}
 
-closeMenuBtn.addEventListener('click', () => {
-  closeMenu();
-});
+if (closeMenuBtn) {
+  closeMenuBtn.addEventListener('click', closeMenu);
+}
 
 if (menuButton && menuPopUp) {
   menuButton.addEventListener('click', () => {
