@@ -43,10 +43,14 @@ closeMenuBtn.addEventListener('click', () => {
   closeMenu();
 });
 
-menuButton.addEventListener('click', () => {
-  menuPopUp.style.display = 'block';
-});
+if (menuButton && menuPopUp) {
+  menuButton.addEventListener('click', () => {
+    menuPopUp.style.display = 'block';
+  });
+}
 
-closePopUp.addEventListener('click', () => {
-  menuPopUp.style.display = 'none';
-});
+if (closePopUp && menuPopUp) {
+  closePopUp.addEventListener('click', () => {
+    menuPopUp.style.display = 'none';
+  });
+}
