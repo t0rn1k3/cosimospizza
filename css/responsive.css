@@ -38,7 +38,7 @@
         padding: 1rem 2rem;
     }
     /* contact page ===============================*/
-    main {
+    #view-contact main {
         padding: 0 2vw 0 6.5vw;
     }
     .form_container {
@@ -175,7 +175,7 @@
         height: calc(0.8rem + 21px);
         font-size: 0.8rem;
     }
-    main .texts {
+    #view-home main .texts {
         margin-top: 5vw;
     }
     .slogan {
@@ -344,7 +344,7 @@
     header nav {
         margin-top: 2rem;
     }
-    main .texts {
+    #view-home main .texts {
         margin-top: 1vw;
     }
     .cosimo {

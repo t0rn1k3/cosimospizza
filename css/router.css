@@ -1,3 +1,4 @@
+/* SPA routing & shared runtime overrides */
 .page-view {
   display: none;
 }
@@ -36,6 +37,13 @@ header .buttons {
   pointer-events: auto;
   visibility: visible;
   z-index: 12;
+  height: 100vh;
+  overflow: visible;
+}
+
+.mobile-navigation.is-open .nav_mobile {
+  height: auto;
+  overflow: visible;
 }
 
 .mobile-navigation #scroll-decoration {
@@ -43,6 +51,7 @@ header .buttons {
 }
 
 .mobile-navigation.is-open #scroll-decoration {
+  height: 100vh;
   pointer-events: auto;
 }
 
@@ -67,13 +76,4 @@ body[data-route="contact"] .right-decoration-div {
 body[data-route="home"] .right-decoration-div,
 body[data-route="menu"] .right-decoration-div {
   background-color: #f86d43;
-}
-
-#view-contact main {
-  width: 100%;
-}
-
-#view-contact .contact-map-form {
-  margin: 0 auto;
-  width: 87vw;
 }
