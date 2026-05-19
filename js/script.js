@@ -7,6 +7,9 @@ const mobDecoration = document.getElementById('scroll-decoration');
 
 // full menu popup (menu page only — not the header burger)
 const menuPopUp = document.getElementById('full-menu-container');
+const fullMenuBtn = document.getElementById('full_menu');
+const closePopUp = document.getElementById('close-menu-page');
+const mobileMenuTrigger = document.querySelector('header .buttons');
 
 function openMenu() {
   if (!openMenuBtn || !closeMenuBtn || !ShowMenu) {
@@ -47,31 +50,28 @@ function closeMenu() {
 
 window.closeMobileNav = closeMenu;
 
-document.addEventListener('click', (event) => {
-  if (event.target.closest('#close_menu')) {
-    closeMenu();
-    return;
-  }
+if (mobileMenuTrigger) {
+  mobileMenuTrigger.addEventListener('click', () => {
+    if (ShowMenu && !ShowMenu.classList.contains('is-open')) {
+      openMenu();
+    }
+  });
+} else if (openMenuBtn) {
+  openMenuBtn.addEventListener('click', openMenu);
+}
 
-  if (
-    event.target.closest('#open_menu') &&
-    ShowMenu &&
-    !ShowMenu.classList.contains('is-open')
-  ) {
-    openMenu();
-    return;
-  }
+if (closeMenuBtn) {
+  closeMenuBtn.addEventListener('click', closeMenu);
+}
 
-  if (!menuPopUp) {
-    return;
-  }
-
-  if (event.target.closest('#full_menu')) {
+if (fullMenuBtn && menuPopUp) {
+  fullMenuBtn.addEventListener('click', () => {
     menuPopUp.classList.add('is-open');
-    return;
-  }
+  });
+}
 
-  if (event.target.closest('#close-menu-page')) {
+if (closePopUp && menuPopUp) {
+  closePopUp.addEventListener('click', () => {
     menuPopUp.classList.remove('is-open');
-  }
-});
+  });
+}
