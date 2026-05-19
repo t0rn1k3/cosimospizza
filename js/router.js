@@ -47,9 +47,8 @@
   }
 
   function closeFullMenu() {
-    var menuPopUp = document.getElementById('full-menu-container');
-    if (menuPopUp) {
-      menuPopUp.classList.remove('is-open');
+    if (typeof window.closeFullMenu === 'function') {
+      window.closeFullMenu();
     }
   }
 

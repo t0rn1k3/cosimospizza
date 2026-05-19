@@ -33,35 +33,13 @@ header .buttons {
   z-index: -1;
 }
 
-.mobile-navigation.is-open {
-  pointer-events: auto;
-  visibility: visible;
-  z-index: 12;
-  height: 100vh;
-  overflow: visible;
-}
-
-.mobile-navigation.is-open .nav_mobile {
-  height: auto;
-  overflow: visible;
-}
-
 .mobile-navigation #scroll-decoration {
   pointer-events: none;
-}
-
-.mobile-navigation.is-open #scroll-decoration {
-  height: 100vh;
-  pointer-events: auto;
 }
 
 #full-menu-container {
   display: none;
   z-index: 20;
-}
-
-#full-menu-container.is-open {
-  display: block;
 }
 
 #view-menu .show_menu-menu-page {
