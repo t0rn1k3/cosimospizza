@@ -6,6 +6,28 @@
   display: block;
 }
 
+header {
+  position: relative;
+  z-index: 11;
+}
+
+.mobile-navigation {
+  pointer-events: none;
+}
+
+.mobile-navigation.is-open {
+  pointer-events: auto;
+  z-index: 12;
+}
+
+.mobile-navigation #scroll-decoration {
+  pointer-events: none;
+}
+
+.mobile-navigation.is-open #scroll-decoration {
+  pointer-events: auto;
+}
+
 body[data-route="contact"] .right-decoration-div {
   background-color: #77ab7b;
 }

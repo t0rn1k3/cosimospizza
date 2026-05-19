@@ -15,6 +15,7 @@ function openMenu() {
     return;
   }
 
+  ShowMenu.classList.add('is-open');
   openMenuBtn.style.display = 'none';
   closeMenuBtn.style.display = 'block';
   ShowMenu.style.height = '100vh';
@@ -35,6 +36,7 @@ function closeMenu() {
     return;
   }
 
+  ShowMenu.classList.remove('is-open');
   closeMenuBtn.style.display = 'none';
   openMenuBtn.style.display = 'block';
   ShowMenu.style.height = '0';
@@ -47,7 +49,11 @@ function closeMenu() {
 
 window.closeMobileNav = closeMenu;
 
-if (openMenuBtn) {
+const mobileMenuTrigger = document.querySelector('header .buttons');
+
+if (mobileMenuTrigger) {
+  mobileMenuTrigger.addEventListener('click', openMenu);
+} else if (openMenuBtn) {
   openMenuBtn.addEventListener('click', openMenu);
 }
 
