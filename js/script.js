@@ -1,5 +1,3 @@
-// language bar const
-const languageLinks = document.getElementsByClassName('language-links');
 // responsive menu consts
 const openMenuBtn = document.getElementById('open_menu');
 const closeMenuBtn = document.getElementById('close_menu');
@@ -9,15 +7,6 @@ const mobIcons = document.getElementById('mobile-icon');
 const mobDecoration = document.getElementById('scroll-decoration');
 
 
-
-// language bar active===========================
-for (let i = 0; i < languageLinks.length; i++) {
-  languageLinks[i].addEventListener("click", function() {
-    let activeElement = document.getElementsByClassName("actv");
-    activeElement[0].className = activeElement[0].className.replace(" actv", "");
-    this.className += " actv";
-  });
-}
 
 // menu pop up button ===================
 const menuButton = document.getElementById('full_menu');

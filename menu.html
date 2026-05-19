@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka" data-lang="ge">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/i18n.css">
 </head>
 <body>
   <!-- DECORATIONS (YELLOW RECTANGLE AND PATTERN RECTANGLE) -->
@@ -37,14 +38,14 @@
           <!-- responsive ul ends here-->
           <!-- MENU BAR -->
           <ul class="main-ul flex-justify">
-            <li><a href="index.html">მთავარი</a></li>
-            <li class="active"><a href="menu.html">მენიუ</a></li>
-            <li><a href="contact.html">კონტაქტი</a></li>
+            <li><a href="index.html" data-i18n="nav.home">მთავარი</a></li>
+            <li class="active"><a href="menu.html" data-i18n="nav.menu">მენიუ</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">კონტაქტი</a></li>
           </ul>
           <!-- LANGUAGE BAR -->
           <ul class="language-ul flex-justify ">
-            <li><a href="#" class="language-links actv">ge</a></li>
-            <li><a href="#" class="language-links">en</a></li>
+            <li><a href="#" class="language-links actv" data-lang="ge">ge</a></li>
+            <li><a href="#" class="language-links" data-lang="en">en</a></li>
           </ul>
         </nav>
       </header>
@@ -56,49 +57,49 @@
             <div class="image">
               <img src="images/romana.png" alt="pizza">
               <div class="hover">
-                <span class="recipe">
+                <span class="recipe" data-i18n="pizza.romana.recipe">
                   პომიდვრის სოუსი, ორეგანო, მოცარელა, პროშუტო კოტო
                 </span>
               </div>
             </div>
-            <span class="pizza_name">რომანა</span>
-            <span class="price">23.50 ლარი</span>
+            <span class="pizza_name" data-i18n="pizza.romana.name">რომანა</span>
+            <span class="price" data-i18n="pizza.romana.price">23.50 ლარი</span>
           </div>
           <div class="box">
             <div class="image">
               <img src="images/cosimo.png" alt="pizza">
               <div class="hover">
-                <span class="recipe">
+                <span class="recipe" data-i18n="pizza.cosimo.recipe">
                   პომიდვრის სოუსი, ორეგანო, მოცარელა, ლურჯი ყველი, გრანა პადანა, პროშუტო კოტო, ტუნა, ხახვი, ლიმონი, რუკოლა
                 </span>
               </div>
             </div>
-            <span class="pizza_name">კოზიმოს პიცა</span>
-            <span class="price">27 ლარი</span>
+            <span class="pizza_name" data-i18n="pizza.cosimo.name">კოზიმოს პიცა</span>
+            <span class="price" data-i18n="pizza.cosimo.price">27 ლარი</span>
           </div>
           <div class="box">
             <div class="image">
               <img src="images/pepperoni.png" alt="pizza">
               <div class="hover">
-                <span class="recipe">
+                <span class="recipe" data-i18n="pizza.pepperoni.recipe">
                   Პომიდვრის სოუსი, ორეგანო, მოცარელა, სალიამის ძეხვი
                 </span>
               </div>
             </div>
-            <span class="pizza_name">პეპერონი</span>
-            <span class="price">23.50 ლარი</span>
+            <span class="pizza_name" data-i18n="pizza.pepperoni.name">პეპერონი</span>
+            <span class="price" data-i18n="pizza.pepperoni.price">23.50 ლარი</span>
           </div>
           <div class="box">
             <div class="image">
               <img src="images/capriciosa.png" alt="pizza">
               <div class="hover">
-                <span class="recipe">
+                <span class="recipe" data-i18n="pizza.capricciosa.recipe">
                   Პომიდვრის სოუსი, ორეგანო, მოცარელა, სალიამი, პროშუტო კოტო, სოკო, ზეთის ხილი
                 </span>
               </div>
             </div>
-            <span class="pizza_name">კაპროჩოზა</span>
-            <span class="price">24.50 ლარი</span>
+            <span class="pizza_name" data-i18n="pizza.capricciosa.name">კაპროჩოზა</span>
+            <span class="price" data-i18n="pizza.capricciosa.price">24.50 ლარი</span>
           </div>
         </div>
         <!-- social network icons -->
@@ -134,7 +135,7 @@
               </a>
             </li>
           </ul>
-          <span id="full_menu">
+          <span id="full_menu" data-i18n="menu.fullMenu">
             მენიუ სრულად
           </span>
         </div>
@@ -148,11 +149,11 @@
         <div class="on-image-texts">
           <h3>pizzetteria da cosimo</h3>
           <h4>
-            <span>იმოგზაურეთ ჩვენთან ერთად,</span> 
-            <span>სურნელოვან იტალიაში</span> 
+            <span data-i18n="sloganLine1">იმოგზაურეთ ჩვენთან ერთად,</span> 
+            <span data-i18n="sloganLine2">სურნელოვან იტალიაში</span> 
           </h4>
         </div>
-        <h2>კოზიმოს პიცეტერია</h2>
+        <h2 data-i18n="menu.pizzeriaName">კოზიმოს პიცეტერია</h2>
       </div>
     </div>
     <div class="main-menu-div">
@@ -162,11 +163,11 @@
         <path d="M2325 5109 c-1079 -100 -1982 -871 -2244 -1916 -347 -1379 478 -2768 1849 -3113 1054 -265 2155 156 2757 1055 576 860 576 1989 0 2850 -180 269 -433 522 -702 702 -483 324 -1081 476 -1660 422z m-573 -1455 c18 -9 207 -190 421 -402 l387 -386 388 386 c213 212 403 394 422 404 22 11 57 18 95 19 121 0 210 -89 210 -210 -1 -38 -8 -73 -19 -95 -10 -19 -192 -209 -404 -422 l-386 -388 386 -387 c212 -214 394 -404 404 -423 11 -22 18 -57 19 -95 0 -121 -89 -210 -210 -210 -38 1 -73 8 -95 19 -19 10 -209 192 -422 404 l-388 387 -387 -387 c-214 -212 -404 -394 -423 -404 -22 -11 -57 -18 -95 -19 -121 0 -210 89 -210 210 1 38 8 73 19 95 10 19 192 209 404 423 l386 387 -386 388 c-212 213 -394 403 -404 422 -11 22 -18 57 -19 95 0 97 58 175 153 206 37 12 114 4 154 -17z"/>
         </g>
       </svg>
-      <h2 class="menuh2">მენიუ</h2>
+      <h2 class="menuh2" data-i18n="menu.title">მენიუ</h2>
         <div class="menu-part">
           <div class="drink-dessert">
             <div class="drinks">
-              <h3>სასმელი | BEVERAGE</h3>
+              <h3 data-i18n="menu.section.beverage">სასმელი | BEVERAGE</h3>
               <ul>
                 <li>
                   <span class="names">
@@ -248,7 +249,7 @@
               </ul>
             </div>
             <div class="dessert">
-              <h3>დესერტი | DESSERT</h3>
+              <h3 data-i18n="menu.section.dessert">დესერტი | DESSERT</h3>
               <ul>
                 <li>
                   <span class="names">
@@ -275,7 +276,7 @@
             </div>
           </div>
           <div class="main-dish">
-            <h3>მთავარი კერძი | MAIN DISH</h3>
+            <h3 data-i18n="menu.section.main">მთავარი კერძი | MAIN DISH</h3>
             <ul>
               <li>
                 <span class="names">
@@ -322,14 +323,14 @@
               <li>
                 <span class="names">
                   <span>კალცონე (დახურული პიცა)</span>
-                  <span>calzone</span>
+                  <span>Calzone (closed pizza)</span>
                 </span>
                 <span class="prices">13.00 ₾</span>
               </li>
               <li>
                 <span class="names">
                   <span>კოზიმოს პიცა</span>
-                  <span>cosimo pizza</span>
+                  <span>Cosimo's Pizza</span>
                 </span>
                 <span class="prices">27.00 ₾</span>
               </li>
@@ -394,9 +395,9 @@
       </svg>
       <nav id="nav_mobile" class="nav_mobile">
         <ul id="main-ul-mobile" class="main-ul-mobile flex-justify">
-          <li><a href="index.html">მთავარი</a></li>
-          <li class="mobile-active"><a href="menu.html">მენიუ</a></li>
-          <li><a href="contact.html">კონტაქტი</a></li>
+          <li><a href="index.html" data-i18n="nav.home">მთავარი</a></li>
+          <li class="mobile-active"><a href="menu.html" data-i18n="nav.menu">მენიუ</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">კონტაქტი</a></li>
         </ul>
         <ul id="mobile-icon" class="social-icons mobile-icons margin flex-justify">
           <li><a href="#fb"><svg xmlns="http://www.w3.org/2000/svg" version="1.0"viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
@@ -421,6 +422,8 @@
   </div>
   <!-- mobile navigation ends here -->
 
+  <script src="js/translations.js"></script>
+  <script src="js/i18n.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

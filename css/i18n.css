@@ -1,0 +1,7 @@
+html[data-lang="ge"] .names span:nth-child(2) {
+  display: none;
+}
+
+html[data-lang="en"] .names span:nth-child(1) {
+  display: none;
+}

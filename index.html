@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka" data-lang="ge">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/i18n.css">
 </head>
 <body>
     <!-- DECORATIONS (YELLOW RECTANGLE AND PATTERN RECTANGLE) -->
@@ -38,14 +39,14 @@
             <!-- responsive ul ends here-->
             <!-- MENU BAR -->
             <ul class="main-ul flex-justify">
-              <li class="active"><a href="index.html">მთავარი</a></li>
-              <li><a href="menu.html">მენიუ</a></li>
-              <li><a href="contact.html">კონტაქტი</a></li>
+              <li class="active"><a href="index.html" data-i18n="nav.home">მთავარი</a></li>
+              <li><a href="menu.html" data-i18n="nav.menu">მენიუ</a></li>
+              <li><a href="contact.html" data-i18n="nav.contact">კონტაქტი</a></li>
             </ul>
             <!-- LANGUAGE BAR -->
             <ul class="language-ul flex-justify ">
-              <li><a href="#" class="language-links actv">ge</a></li>
-              <li><a href="#" class="language-links">en</a></li>
+              <li><a href="#" class="language-links actv" data-lang="ge">ge</a></li>
+              <li><a href="#" class="language-links" data-lang="en">en</a></li>
             </ul>
           </nav>
       </header>
@@ -53,7 +54,7 @@
       <main class="flex-justify">
           <div class="texts">
             <p class="cosimo">cosimo</p>
-            <h2 class="slogan">იმოგზაურეთ ჩვენთან ერთად, სურნელოვან იტალიაში</h2>
+            <h2 class="slogan" data-i18n="slogan">იმოგზაურეთ ჩვენთან ერთად, სურნელოვან იტალიაში</h2>
             <div class="contact-div">
               <div class="location order-and-location">
                 <a href="contact.html" class="location-link"></a>
@@ -62,7 +63,7 @@
                   <path d="M2325 5105 c-425 -55 -817 -247 -1121 -549 -307 -306 -497 -700 -549 -1136 -27 -229 -14 -433 44 -675 171 -708 728 -1588 1573 -2485 218 -231 250 -260 289 -260 38 0 97 55 329 305 931 1004 1479 1936 1575 2678 73 565 -134 1156 -550 1573 -286 286 -637 467 -1050 539 -127 23 -404 28 -540 10z m450 -1053 c325 -89 554 -320 641 -648 27 -103 26 -312 -3 -419 -59 -217 -191 -403 -369 -518 -570 -369 -1317 6 -1361 682 -16 248 77 490 257 671 132 131 282 211 465 246 94 18 278 11 370 -14z"/>
                   </g>
                 </svg>
-                <span>გამრეკელის N 7</span>
+                <span data-i18n="address">გამრეკელის N 7</span>
               </div>
               <div class="order order-and-location">
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
@@ -70,7 +71,7 @@
                   <path d="M1521 5105 c-178 -39 -349 -172 -428 -335 -79 -160 -74 -2 -71 -2245 l3 -2000 27 -81 c67 -195 217 -345 412 -412 l81 -27 987 -3 c1108 -3 1065 -5 1217 70 120 59 220 160 278 278 78 159 73 5 73 2210 0 2205 5 2051 -73 2210 -80 165 -250 296 -433 335 -100 21 -1975 21 -2073 0z m2289 -2325 l0 -1480 -1250 0 -1250 0 0 1480 0 1480 1250 0 1250 0 0 -1480z m-1130 -1811 c103 -46 161 -133 168 -250 4 -66 1 -84 -20 -130 -98 -214 -396 -234 -513 -35 -92 158 -19 363 150 424 52 18 165 14 215 -9z"/>
                   </g>
                 </svg>
-                <span>შეგვიკვეთეთ : 591 75 70 93</span>
+                <span data-i18n="orderPhone">შეგვიკვეთეთ : 591 75 70 93</span>
               </div>
             </div>
             <!-- social network icons -->
@@ -121,9 +122,9 @@
       </svg>
       <nav id="nav_mobile" class="nav_mobile">
         <ul id="main-ul-mobile" class="main-ul-mobile flex-justify">
-          <li class="mobile-active"><a href="index.html">მთავარი</a></li>
-          <li><a href="menu.html">მენიუ</a></li>
-          <li><a href="contact.html">კონტაქტი</a></li>
+          <li class="mobile-active"><a href="index.html" data-i18n="nav.home">მთავარი</a></li>
+          <li><a href="menu.html" data-i18n="nav.menu">მენიუ</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">კონტაქტი</a></li>
         </ul>
         <ul id="mobile-icon" class="social-icons mobile-icons margin flex-justify">
           <li><a href="#fb"><svg xmlns="http://www.w3.org/2000/svg" version="1.0"viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
@@ -150,6 +151,8 @@
 
 
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/translations.js"></script>
+  <script src="js/i18n.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
