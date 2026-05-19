@@ -6,17 +6,35 @@
   display: block;
 }
 
+.right-decoration-div,
+.pattern-decor {
+  pointer-events: none;
+}
+
 header {
   position: relative;
   z-index: 11;
 }
 
+header .buttons {
+  position: relative;
+  z-index: 13;
+  pointer-events: auto;
+}
+
+#open_menu {
+  pointer-events: auto;
+}
+
 .mobile-navigation {
   pointer-events: none;
+  visibility: hidden;
+  z-index: -1;
 }
 
 .mobile-navigation.is-open {
   pointer-events: auto;
+  visibility: visible;
   z-index: 12;
 }
 
@@ -26,6 +44,20 @@ header {
 
 .mobile-navigation.is-open #scroll-decoration {
   pointer-events: auto;
+}
+
+#full-menu-container {
+  display: none;
+  z-index: 20;
+}
+
+#full-menu-container.is-open {
+  display: block;
+}
+
+#view-menu .show_menu-menu-page {
+  position: relative;
+  z-index: 2;
 }
 
 body[data-route="contact"] .right-decoration-div {

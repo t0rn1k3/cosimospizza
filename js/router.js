@@ -49,7 +49,7 @@
   function closeFullMenu() {
     var menuPopUp = document.getElementById('full-menu-container');
     if (menuPopUp) {
-      menuPopUp.style.display = 'none';
+      menuPopUp.classList.remove('is-open');
     }
   }
 
